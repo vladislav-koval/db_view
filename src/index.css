@@ -1,0 +1,50 @@
+body, h1, h2, * {
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin: 25px 0;
+    border-radius: 5px;
+    background: #e5e5e5;
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, .4);
+}
+
+.header h1 {
+    padding: 15px;
+}
+
+.header h2 {
+    padding: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.del_btn {
+    cursor: pointer;
+    color: #ff908e;
+    border: 1px solid #ff908e;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.del_btn:hover {
+    border: 1px solid red;
+    color: red;
+}
+
+.del_btn:active {
+    box-shadow: inset 0 0 2px red;
+}
+
+
+

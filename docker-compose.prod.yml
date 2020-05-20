@@ -1,0 +1,27 @@
+version: '3.7'
+
+services:
+  db_view-prod:
+    image: vkoval1996/db_view
+    container_name: db_view
+    build:git branch -u origin/master
+      context: .
+      dockerfile: Dockerfile.prod
+    ports:
+      - 1337:80
+
+  couchdb-prod:
+    container_name: couchdb
+    image: library/couchdb
+    environment:
+      - COUCHDB_USER=admin
+      - COUCHDB_PASSWORD=password
+    ports:
+      - 5984:5984
+    volumes:
+      - couchdb_data:/couchdb
+      - ./couchdb:/opt/couchdb/etc/local.d
+
+volumes:
+  couchdb_data:
+    driver: local

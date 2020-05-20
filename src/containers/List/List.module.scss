@@ -1,0 +1,34 @@
+.List {
+  .head {
+    span {
+      font-weight: 700;
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 1px 2px 5px 1px #cccccc;
+  }
+  li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+  }
+
+  li:nth-child(odd) {
+    background: #918be5;
+  }
+
+  li:nth-child(even) {
+    background: bisque;
+  }
+
+  li.head {
+    background: #62bebb;
+  }
+}

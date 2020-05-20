@@ -1,0 +1,32 @@
+.Input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  outline: none;
+
+  label {
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  input {
+    max-width: 350px;
+    display: block;
+    box-sizing: border-box;
+    font-size: 15px;
+    border: 1px solid #bebebe;
+    padding: 7px;
+    margin: 0 0 5px;
+    width: 100%;
+    outline: none;
+    transition: all .3s ease-in-out;
+    border-radius: 5px;
+
+    &:focus {
+      border: 1px solid #655ed3;
+    }
+  }
+
+
+}

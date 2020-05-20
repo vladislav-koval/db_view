@@ -1,0 +1,27 @@
+.form {
+  position: absolute;
+  right: 100%;
+  width: 400px;
+  border: 1px solid #000;
+  background: rgb(222, 238, 232);
+  padding: 10px 15px;
+  margin: 50px auto 0;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .4);
+
+  &.show {
+    right: calc(50% - 200px);
+  }
+;
+
+  h2 {
+    text-align: center;
+    text-decoration: underline;;
+  }
+
+  .buttons {
+    margin: 15px 0 10px;
+    display: flex;
+    justify-content: center;
+  }
+}
